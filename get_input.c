@@ -6,7 +6,7 @@
 /*   By: pgorner <pgorner@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 14:36:36 by pgorner           #+#    #+#             */
-/*   Updated: 2023/01/10 17:49:32 by pgorner          ###   ########.fr       */
+/*   Updated: 2023/01/11 17:58:41 by pgorner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,14 +104,7 @@ void	get_input(t_s *ms, int fd)
 		i = ms->line;
 		ms->height++;
 	}
-	printf("ms->widhth  %i\n\n\n", ms->width);
-/* 	c = 0;
-	while (test[c])
-	{
-		free(test[c]);
-		c++;
-	}
-	free(test); */
+
 	ms->sX = (WIDTH/2 - ((ms->width/2)* ms->offset));
 	ms->sY = (HEIGHT/2 - ((ms->height/2)* ms->offset));
 	x(ms);
